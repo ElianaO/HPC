@@ -26,7 +26,7 @@ int main()
 
    for (int j=1; j<= MAX_THREADS; j++) {
      // printf(" running on %d threads: ", j);
-     // printf("%d\n", omp_get_thread_num()); // prueba totalmente estupida 
+     // printf("%d\n", omp_get_thread_num()); // prueba t.e 1 
 
       //omp_set_num_threads(j);
       double pointsIn=0;
@@ -39,7 +39,7 @@ int main()
 
        for(int i=0; i<totalpoints; i++) 
       { 
-         //printf("%d\n", omp_get_thread_num()); // prueba totalmente estupida 2 
+         //printf("%d\n", omp_get_thread_num()); // prueba t.e 2
          xValue = (double) rand()/RAND_MAX; //Random point: x 
          yValue = (double) rand()/RAND_MAX; //Random point: y
          distance = sqrt(pow(xValue,2) + pow(yValue,2)); 
